@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <!-- Placeholder: cap perjalanan "Travel Stamp · Deutschland". Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <path id="arc-top" d="M33 80A47 47 0 0 1 127 80"/>
+    <path id="arc-bottom" d="M24 80A56 56 0 0 0 136 80"/>
+    <path id="star" d="M0-5L1.23-1.7 4.76-1.55 2 .65 2.94 4.05 0 2.1-2.94 4.05-2 .65-4.76-1.55-1.23-1.7Z"/>
+    <clipPath id="flag-circle">
+      <circle cx="80" cy="80" r="30"/>
+    </clipPath>
+  </defs>
+
+  <!-- Pinggiran putih stiker -->
+  <circle cx="80" cy="80" r="77" fill="#FFFFFF"/>
+
+  <g transform="rotate(-8 80 80)">
+    <circle cx="80" cy="80" r="70" fill="#FBF6EC" stroke="#2B2522" stroke-width="3"/>
+    <circle cx="80" cy="80" r="62" fill="none" stroke="#2B2522" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+    <g font-family="Verdana, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#2B2522">
+      <text><textPath href="#arc-top" startOffset="50%" text-anchor="middle">TRAVEL STAMP</textPath></text>
+      <text><textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">DEUTSCHLAND</textPath></text>
+    </g>
+
+    <use href="#star" transform="translate(16 80) scale(.9)" fill="#2B2522"/>
+    <use href="#star" transform="translate(144 80) scale(.9)" fill="#2B2522"/>
+
+    <g clip-path="url(#flag-circle)">
+      <rect x="50" y="50" width="60" height="20" fill="#1F1F1F"/>
+      <rect x="50" y="70" width="60" height="20" fill="#D62828"/>
+      <rect x="50" y="90" width="60" height="20" fill="#F2B705"/>
+    </g>
+    <circle cx="80" cy="80" r="30" fill="none" stroke="#2B2522" stroke-width="2"/>
+    <circle cx="80" cy="80" r="36" fill="none" stroke="#2B2522" stroke-width="1.5"/>
+  </g>
+</svg>

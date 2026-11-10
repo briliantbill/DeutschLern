@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="150" viewBox="0 0 140 150">
+  <!-- Placeholder: kereta merah tampak depan di atas rel. Ikon Bab 8 (Auf Reisen).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="14" stroke-linejoin="round">
+    <path d="M30 40Q30 16 70 16Q110 16 110 40V112Q110 120 102 120H38Q30 120 30 112Z"/>
+    <rect x="18" y="122" width="104" height="16"/>
+  </g>
+
+  <!-- Rel -->
+  <g stroke="#2B2522" stroke-width="3" stroke-linecap="round">
+    <path d="M44 120L30 138M96 120L110 138"/>
+    <path d="M22 134H118M28 126H112" stroke="#6B5E55" stroke-width="2.5"/>
+  </g>
+
+  <!-- Badan kereta -->
+  <path d="M30 40Q30 16 70 16Q110 16 110 40V112Q110 120 102 120H38Q30 120 30 112Z" fill="#D62828" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M31 96H109" stroke="#FBF6EC" stroke-width="7"/>
+
+  <!-- Kaca depan -->
+  <path d="M40 38Q40 28 70 28Q100 28 100 38V66Q100 70 96 70H44Q40 70 40 66Z" fill="#A9C6E3" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M48 62L62 34M58 62L70 38" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Papan tujuan -->
+  <rect x="52" y="19" width="36" height="7" rx="2" fill="#1F1F1F"/>
+  <rect x="56" y="21" width="20" height="3" rx="1" fill="#F2B705"/>
+
+  <!-- Lampu & bemper -->
+  <g stroke="#2B2522" stroke-width="2">
+    <circle cx="46" cy="83" r="6" fill="#F2B705"/>
+    <circle cx="94" cy="83" r="6" fill="#F2B705"/>
+    <rect x="58" y="78" width="24" height="10" rx="3" fill="#1F1F1F"/>
+    <rect x="36" y="106" width="68" height="10" rx="3" fill="#6B5E55"/>
+  </g>
+</svg>

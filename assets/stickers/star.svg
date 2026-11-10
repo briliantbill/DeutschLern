@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Placeholder: stiker bintang emas. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <polygon points="50,12 59.99,38.25 88.04,39.64 66.17,57.25 73.51,84.36 50,69 26.49,84.36 33.83,57.25 11.96,39.64 40.01,38.25" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="18" stroke-linejoin="round"/>
+  <polygon points="50,12 59.99,38.25 88.04,39.64 66.17,57.25 73.51,84.36 50,69 26.49,84.36 33.83,57.25 11.96,39.64 40.01,38.25" fill="#F2B705" stroke="#2B2522" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="42" cy="44" rx="7" ry="4" fill="#FFFFFF" opacity="0.5" transform="rotate(-30 42 44)"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <!-- Placeholder: rumah kayu bergaya Fachwerkhaus. Ikon Bab 3 (die Familie).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="14" stroke-linejoin="round">
+    <path d="M14 66L70 16L126 66Z"/>
+    <rect x="26" y="60" width="88" height="66"/>
+    <rect x="92" y="26" width="14" height="28"/>
+  </g>
+
+  <!-- Cerobong -->
+  <rect x="92" y="26" width="14" height="28" fill="#B3261E" stroke="#2B2522" stroke-width="2.5"/>
+
+  <!-- Dinding & balok kayu -->
+  <rect x="26" y="60" width="88" height="66" fill="#FBF6EC" stroke="#2B2522" stroke-width="2.5"/>
+  <g stroke="#6B3E26" stroke-width="5" stroke-linecap="square">
+    <path d="M28 93H112"/>
+    <path d="M50 62V124M90 62V124"/>
+    <path d="M30 64L48 91M48 64L30 91M92 64L110 91M110 64L92 91"/>
+  </g>
+
+  <!-- Atap -->
+  <path d="M12 68L70 14L128 68" fill="none" stroke="#2B2522" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M12 68L70 14L128 68" fill="none" stroke="#D62828" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M30 60L70 24L110 60Z" fill="#EFE4D0" stroke="#2B2522" stroke-width="2"/>
+
+  <!-- Jendela bulat di loteng dengan hati -->
+  <circle cx="70" cy="46" r="9" fill="#A9C6E3" stroke="#2B2522" stroke-width="2"/>
+  <path d="M70 51l-4.5-4.2a2.8 2.8 0 0 1 4.5-3.3a2.8 2.8 0 0 1 4.5 3.3z" fill="#E86A7A"/>
+
+  <!-- Jendela & pintu -->
+  <g stroke="#2B2522" stroke-width="2">
+    <rect x="56" y="68" width="28" height="20" rx="2" fill="#A9C6E3"/>
+    <path d="M70 68v20M56 78h28"/>
+    <rect x="31" y="98" width="15" height="16" rx="2" fill="#A9C6E3"/>
+    <rect x="94" y="98" width="15" height="16" rx="2" fill="#A9C6E3"/>
+    <path d="M60 126V104a10 10 0 0 1 20 0v22" fill="#9A6440"/>
+  </g>
+  <circle cx="75" cy="115" r="1.8" fill="#F2B705"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="120" viewBox="0 0 60 120">
+  <!-- Placeholder: pin bundar merah. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <radialGradient id="head" cx="38%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#FF8A80"/>
+      <stop offset="0.45" stop-color="#D62828"/>
+      <stop offset="1" stop-color="#8E1414"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Pinggiran putih stiker -->
+  <path d="M30 50V110" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="30" cy="30" r="26" fill="#FFFFFF"/>
+
+  <!-- Jarum -->
+  <path d="M30 50V110" stroke="#2B2522" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 50V110" stroke="#B8BEC6" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Kepala pin -->
+  <circle cx="30" cy="30" r="20" fill="url(#head)" stroke="#2B2522" stroke-width="2.5"/>
+  <ellipse cx="23" cy="22" rx="6" ry="4" fill="#FFFFFF" opacity="0.55" transform="rotate(-30 23 22)"/>
+</svg>

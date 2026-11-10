@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="124" viewBox="0 0 140 124">
+  <!-- Placeholder: pretzel (die Brezel). Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <path id="loop" d="M70 102C40 102 22 84 24 60C26 36 44 22 56 26C66 29 70 38 70 46C70 38 74 29 84 26C96 22 114 36 116 60C118 84 100 102 70 102Z"/>
+    <path id="arm-a" d="M36 34C48 62 80 72 94 96"/>
+    <path id="arm-b" d="M104 34C92 62 60 72 46 96"/>
+  </defs>
+
+  <!-- Pinggiran putih stiker -->
+  <use href="#loop" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="30" stroke-linejoin="round"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#2B2522" stroke-width="17">
+      <use href="#loop"/>
+      <use href="#arm-a"/>
+      <use href="#arm-b"/>
+    </g>
+    <g stroke="#B8682E" stroke-width="12">
+      <use href="#loop"/>
+      <use href="#arm-a"/>
+      <use href="#arm-b"/>
+    </g>
+    <g stroke="#E2A15C" stroke-width="3" opacity="0.8" transform="translate(-1.5 -2)">
+      <use href="#loop"/>
+      <use href="#arm-a"/>
+      <use href="#arm-b"/>
+    </g>
+  </g>
+
+  <!-- Butiran garam -->
+  <g fill="#FFFFFF">
+    <rect x="25" y="61" width="4" height="2.6" rx="1.2" transform="rotate(-30 27 62)"/>
+    <rect x="34" y="86" width="4" height="2.6" rx="1.2" transform="rotate(20 36 87)"/>
+    <rect x="57" y="99" width="4" height="2.6" rx="1.2"/>
+    <rect x="83" y="99" width="4" height="2.6" rx="1.2" transform="rotate(-15 85 100)"/>
+    <rect x="104" y="85" width="4" height="2.6" rx="1.2" transform="rotate(35 106 86)"/>
+    <rect x="112" y="60" width="4" height="2.6" rx="1.2" transform="rotate(70 114 61)"/>
+    <rect x="98" y="31" width="4" height="2.6" rx="1.2" transform="rotate(-20 100 32)"/>
+    <rect x="81" y="26" width="4" height="2.6" rx="1.2"/>
+    <rect x="56" y="26" width="4" height="2.6" rx="1.2" transform="rotate(25 58 27)"/>
+    <rect x="39" y="31" width="4" height="2.6" rx="1.2" transform="rotate(-40 41 32)"/>
+    <rect x="47" y="52" width="4" height="2.6" rx="1.2" transform="rotate(60 49 53)"/>
+    <rect x="90" y="52" width="4" height="2.6" rx="1.2" transform="rotate(-60 92 53)"/>
+    <rect x="61" y="76" width="4" height="2.6" rx="1.2" transform="rotate(30 63 77)"/>
+    <rect x="77" y="76" width="4" height="2.6" rx="1.2" transform="rotate(-30 79 77)"/>
+  </g>
+</svg>

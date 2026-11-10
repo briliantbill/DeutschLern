@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="170" viewBox="0 0 200 170">
+  <!-- Placeholder: Brandenburger Tor (Gerbang Brandenburg, Berlin). Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <path d="M14 160V62H50V44H66V28H92V2H112V28H134V44H150V62H186V160Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
+
+  <g stroke="#2B2522" stroke-linejoin="round">
+    <!-- Lorong di balik tiang -->
+    <rect x="26" y="84" width="148" height="62" fill="#B98B45" stroke-width="2"/>
+
+    <!-- Tiang -->
+    <g fill="#F2D69A" stroke-width="1.6">
+      <rect x="28" y="84" width="12" height="62"/>
+      <rect x="54" y="84" width="12" height="62"/>
+      <rect x="80" y="84" width="12" height="62"/>
+      <rect x="108" y="84" width="12" height="62"/>
+      <rect x="134" y="84" width="12" height="62"/>
+      <rect x="160" y="84" width="12" height="62"/>
+    </g>
+
+    <!-- Alas, balok atas, dan atap bertingkat -->
+    <rect x="20" y="146" width="160" height="8" fill="#D9B46E" stroke-width="2"/>
+    <rect x="20" y="68" width="160" height="16" fill="#EBCB86" stroke-width="2"/>
+    <path d="M20 74H180" stroke-width="1" opacity="0.45"/>
+    <rect x="56" y="52" width="88" height="16" fill="#EBCB86" stroke-width="2"/>
+    <rect x="68" y="46" width="64" height="6" fill="#D9B46E" stroke-width="1.6"/>
+
+    <!-- Kereta kuda (Quadriga) berwarna tembaga hijau -->
+    <g fill="#5E9C76" stroke-width="1.4">
+      <rect x="86" y="38" width="28" height="8" rx="2"/>
+      <ellipse cx="80" cy="40" rx="8" ry="4"/>
+      <ellipse cx="120" cy="40" rx="8" ry="4"/>
+      <ellipse cx="74" cy="33" rx="3" ry="5" transform="rotate(-25 74 33)"/>
+      <ellipse cx="126" cy="33" rx="3" ry="5" transform="rotate(25 126 33)"/>
+      <ellipse cx="89" cy="33" rx="2.6" ry="4.5" transform="rotate(-15 89 33)"/>
+      <ellipse cx="111" cy="33" rx="2.6" ry="4.5" transform="rotate(15 111 33)"/>
+      <path d="M97 38L100 22L103 38Z"/>
+      <circle cx="100" cy="19" r="3.2"/>
+      <path d="M105 40V9" fill="none" stroke="#2B2522" stroke-width="1.6"/>
+      <circle cx="105" cy="7" r="3" fill="none"/>
+    </g>
+  </g>
+</svg>

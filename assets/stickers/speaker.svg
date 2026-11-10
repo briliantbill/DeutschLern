@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Placeholder: stiker speaker untuk tombol "Dengarkan". Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <circle cx="50" cy="50" r="38" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16"/>
+
+  <!-- Badan stiker -->
+  <circle cx="50" cy="50" r="38" fill="#F4C542" stroke="#2B2522" stroke-width="3"/>
+  <ellipse cx="36" cy="26" rx="10" ry="5" fill="#FFFFFF" opacity="0.55" transform="rotate(-28 36 26)"/>
+
+  <!-- Speaker dan gelombang suara -->
+  <path d="M25 42h11l17-14v44L36 58H25Z" fill="#2B2522" stroke="#2B2522" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M61 40a13 13 0 0 1 0 20" fill="none" stroke="#2B2522" stroke-width="6" stroke-linecap="round"/>
+  <path d="M69 31a25 25 0 0 1 0 38" fill="none" stroke="#2B2522" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <!-- Placeholder: cangkir kopi pagi dengan garis bendera Jerman. Ikon Bab 6 (der Alltag).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="14" stroke-linejoin="round">
+    <path d="M28 52H100V108A18 18 0 0 1 82 126H46A18 18 0 0 1 28 108Z"/>
+    <circle cx="106" cy="80" r="20"/>
+    <path d="M48 46C42 36 54 30 48 18M66 46C60 36 72 30 66 18M84 46C78 36 90 30 84 18" stroke-width="18"/>
+  </g>
+
+  <!-- Uap -->
+  <g fill="none" stroke="#6B5E55" stroke-width="3.5" stroke-linecap="round">
+    <path d="M48 44C42 35 54 30 48 20"/>
+    <path d="M66 44C60 35 72 30 66 20"/>
+    <path d="M84 44C78 35 90 30 84 20"/>
+  </g>
+
+  <!-- Gagang -->
+  <path d="M100 66A14 14 0 0 1 100 96" fill="none" stroke="#2B2522" stroke-width="13" stroke-linecap="round"/>
+  <path d="M100 66A14 14 0 0 1 100 96" fill="none" stroke="#FBF6EC" stroke-width="7.5" stroke-linecap="round"/>
+
+  <!-- Badan cangkir -->
+  <path d="M28 52H100V108A18 18 0 0 1 82 126H46A18 18 0 0 1 28 108Z" fill="#FBF6EC" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+  <ellipse cx="64" cy="54" rx="34" ry="6" fill="#7A4A2A" stroke="#2B2522" stroke-width="2.5"/>
+
+  <!-- Garis hitam-merah-emas -->
+  <rect x="29.5" y="80" width="69" height="5" fill="#1F1F1F"/>
+  <rect x="29.5" y="85" width="69" height="5" fill="#D62828"/>
+  <rect x="29.5" y="90" width="69" height="5" fill="#F2B705"/>
+
+  <path d="M38 64V104" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+</svg>

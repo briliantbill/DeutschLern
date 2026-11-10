@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="170" viewBox="0 0 150 170">
+  <!-- Placeholder: bendera Jerman berkibar di tiang. Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 14V160" stroke-width="20"/>
+    <path d="M26 24C56 14 86 34 126 22V94C86 106 56 86 26 96Z" stroke-width="16"/>
+  </g>
+
+  <!-- Tiang -->
+  <path d="M24 16V158" stroke="#2B2522" stroke-width="9" stroke-linecap="round"/>
+  <path d="M24 16V158" stroke="#8B5A3C" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="24" cy="12" r="6" fill="#F2B705" stroke="#2B2522" stroke-width="2"/>
+
+  <!-- Tiga garis bendera -->
+  <path d="M26 24C56 14 86 34 126 22V46C86 58 56 38 26 48Z" fill="#1F1F1F"/>
+  <path d="M26 48C56 38 86 58 126 46V70C86 82 56 62 26 72Z" fill="#D62828"/>
+  <path d="M26 72C56 62 86 82 126 70V94C86 106 56 86 26 96Z" fill="#F2B705"/>
+  <path d="M60 26C66 48 66 78 60 96" fill="none" stroke="#FFFFFF" stroke-width="8" opacity="0.12"/>
+  <path d="M26 24C56 14 86 34 126 22V94C86 106 56 86 26 96Z" fill="none" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

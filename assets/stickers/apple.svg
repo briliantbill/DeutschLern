@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="140" viewBox="0 0 130 140">
+  <!-- Placeholder: apel merah (der Apfel). Ikon Kapitel 8 (Fit und gesund).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="14" stroke-linejoin="round">
+    <path d="M65 44C52 32 18 34 16 70C14 102 38 128 52 126C58 125 60 122 65 122C70 122 72 125 78 126C92 128 116 102 114 70C112 34 78 32 65 44Z"/>
+    <path d="M68 40C68 26 76 16 92 14C94 30 84 40 68 40Z"/>
+  </g>
+
+  <!-- Tangkai -->
+  <path d="M65 46C64 36 60 28 54 22" fill="none" stroke="#2B2522" stroke-width="6" stroke-linecap="round"/>
+  <path d="M65 46C64 36 60 28 54 22" fill="none" stroke="#7A4A2A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Daun -->
+  <path d="M68 40C68 26 76 16 92 14C94 30 84 40 68 40Z" fill="#6BA368" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M72 36C76 28 82 22 88 19" fill="none" stroke="#2B2522" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Buah -->
+  <path d="M65 44C52 32 18 34 16 70C14 102 38 128 52 126C58 125 60 122 65 122C70 122 72 125 78 126C92 128 116 102 114 70C112 34 78 32 65 44Z" fill="#D62828" stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M34 58C28 66 27 78 30 88" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+</svg>

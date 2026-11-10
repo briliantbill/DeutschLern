@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="160" viewBox="0 0 140 160">
+  <!-- Placeholder: kompas kuningan. Arah memakai singkatan Jerman: N (Norden), O (Osten), S (Süden), W (Westen).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+    <circle cx="70" cy="92" r="58"/>
+    <circle cx="70" cy="22" r="13"/>
+    <rect x="62" y="22" width="16" height="20"/>
+  </g>
+
+  <!-- Gelang & leher -->
+  <circle cx="70" cy="22" r="10" fill="none" stroke="#2B2522" stroke-width="8"/>
+  <circle cx="70" cy="22" r="10" fill="none" stroke="#D9A441" stroke-width="4.5"/>
+  <rect x="63" y="30" width="14" height="10" rx="3" fill="#D9A441" stroke="#2B2522" stroke-width="2"/>
+
+  <!-- Badan & muka kompas -->
+  <circle cx="70" cy="92" r="56" fill="#D9A441" stroke="#2B2522" stroke-width="2.5"/>
+  <circle cx="70" cy="92" r="45" fill="#FFFDF5" stroke="#9C7A2E" stroke-width="2"/>
+
+  <g stroke="#6B5E55" stroke-width="1.5" stroke-linecap="round">
+    <path d="M70 49v5M113 92h-5M70 135v-5M27 92h5"/>
+    <path d="M100.4 61.6l-3 3M100.4 122.4l-3-3M39.6 122.4l3-3M39.6 61.6l3 3"/>
+  </g>
+
+  <g font-family="Verdana, sans-serif" font-size="11" font-weight="700" fill="#2B2522" text-anchor="middle">
+    <text x="70" y="68">N</text>
+    <text x="96" y="96">O</text>
+    <text x="70" y="124">S</text>
+    <text x="44" y="96">W</text>
+  </g>
+
+  <!-- Jarum -->
+  <g transform="rotate(20 70 92)" stroke="#2B2522" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M70 58L78 92H62Z" fill="#D62828"/>
+    <path d="M70 126L62 92H78Z" fill="#4A7FB5"/>
+  </g>
+  <circle cx="70" cy="92" r="5" fill="#D9A441" stroke="#2B2522" stroke-width="1.5"/>
+</svg>

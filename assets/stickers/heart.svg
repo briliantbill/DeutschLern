@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="104" viewBox="-6 -6 112 104">
+  <!-- Placeholder: stiker hati merah. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <path d="M50 84C20 64 6 46 6 28C6 14 17 6 29 6C39 6 46 12 50 20C54 12 61 6 71 6C83 6 94 14 94 28C94 46 80 64 50 84Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M50 84C20 64 6 46 6 28C6 14 17 6 29 6C39 6 46 12 50 20C54 12 61 6 71 6C83 6 94 14 94 28C94 46 80 64 50 84Z" fill="#D62828" stroke="#2B2522" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="28" cy="25" rx="9" ry="5" fill="#FFFFFF" opacity="0.45" transform="rotate(-35 28 25)"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="110" viewBox="0 0 44 110">
+  <!-- Placeholder: klip kertas logam (tanpa pinggiran putih, karena benda, bukan stiker).
+       Ganti dengan ilustrasi asli, nama file tetap. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 94V24a9 9 0 0 1 18 0v66a13 13 0 0 1-26 0V32" stroke="#2B2522" stroke-width="6"/>
+    <path d="M16 94V24a9 9 0 0 1 18 0v66a13 13 0 0 1-26 0V32" stroke="#9AA3AE" stroke-width="3.5"/>
+    <path d="M16 94V24a9 9 0 0 1 18 0v66a13 13 0 0 1-26 0V32" stroke="#E3E7EC" stroke-width="1.2" transform="translate(-.6 -.6)"/>
+  </g>
+</svg>

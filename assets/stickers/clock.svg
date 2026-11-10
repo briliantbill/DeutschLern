@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="150" viewBox="0 0 140 150">
+  <!-- Placeholder: jam dinding menunjukkan pukul setengah sembilan (halb neun).
+       Ikon Bab 2. Ganti dengan ilustrasi asli, nama file tetap. -->
+
+  <!-- Pinggiran putih stiker -->
+  <g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round">
+    <circle cx="70" cy="82" r="58"/>
+    <circle cx="38" cy="26" r="15"/>
+    <circle cx="102" cy="26" r="15"/>
+  </g>
+
+  <!-- Lonceng di atas -->
+  <g stroke="#2B2522" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M24 34a16 16 0 0 1 26-18z" fill="#D62828"/>
+    <path d="M116 34a16 16 0 0 0-26-18z" fill="#D62828"/>
+  </g>
+
+  <!-- Badan & muka jam -->
+  <circle cx="70" cy="82" r="56" fill="#D9A441" stroke="#2B2522" stroke-width="2.5"/>
+  <circle cx="70" cy="82" r="46" fill="#FFFDF5" stroke="#9C7A2E" stroke-width="2"/>
+
+  <g stroke="#6B5E55" stroke-width="2" stroke-linecap="round">
+    <path d="M70 40v5M112 82h-5M70 124v-5M28 82h5"/>
+    <path d="M91 45.6l-2 3.5M106.4 61l-3.5 2M106.4 103l-3.5-2M91 118.4l-2-3.5M49 118.4l2-3.5M33.6 103l3.5-2M33.6 61l3.5 2M49 45.6l2 3.5"/>
+  </g>
+
+  <g font-family="Verdana, sans-serif" font-size="12" font-weight="700" fill="#2B2522" text-anchor="middle">
+    <text x="70" y="59">12</text>
+    <text x="97" y="86">3</text>
+    <text x="70" y="113">6</text>
+    <text x="43" y="86">9</text>
+  </g>
+
+  <!-- Jarum: menit di angka 6, jam di antara 8 dan 9 -->
+  <g stroke="#2B2522" stroke-linecap="round">
+    <path d="M70 82V114" stroke-width="3.5"/>
+    <path d="M70 82L46 88.5" stroke-width="5"/>
+  </g>
+  <circle cx="70" cy="82" r="5" fill="#D62828" stroke="#2B2522" stroke-width="1.5"/>
+</svg>
