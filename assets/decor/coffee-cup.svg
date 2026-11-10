@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280">
+  <!-- Placeholder: cangkir kopi di atas tatakan, dilihat dari atas. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <radialGradient id="coffee" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#6B4126"/>
+      <stop offset="0.7" stop-color="#3E2416"/>
+      <stop offset="1" stop-color="#2A170D"/>
+    </radialGradient>
+  </defs>
+  <circle cx="140" cy="140" r="132" fill="#FFFCF6" stroke="#E4D8C6" stroke-width="3"/>
+  <circle cx="140" cy="140" r="104" fill="none" stroke="#EEE4D4" stroke-width="3"/>
+  <rect x="206" y="124" width="58" height="32" rx="16" fill="#FFFFFF" stroke="#E0D3C0" stroke-width="3"/>
+  <circle cx="140" cy="140" r="86" fill="#FFFFFF" stroke="#E0D3C0" stroke-width="3"/>
+  <circle cx="140" cy="140" r="72" fill="url(#coffee)"/>
+  <circle cx="140" cy="140" r="69" fill="none" stroke="#B9875A" stroke-width="5" opacity="0.55"/>
+  <path d="M108 112c12-10 34-12 46-4" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Placeholder: sukulen dalam pot, dilihat dari atas. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <circle cx="150" cy="150" r="142" fill="#F6F1E8" stroke="#DCD0BE" stroke-width="4"/>
+  <circle cx="150" cy="150" r="126" fill="#E7DDCC"/>
+  <circle cx="150" cy="150" r="118" fill="#5B4231"/>
+
+  <g fill="#6E9C55" stroke="#4E7A3C" stroke-width="2">
+    <ellipse cx="150" cy="86" rx="24" ry="56"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(36 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(72 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(108 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(144 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(180 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(216 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(252 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(288 150 150)"/>
+    <ellipse cx="150" cy="86" rx="24" ry="56" transform="rotate(324 150 150)"/>
+  </g>
+
+  <g fill="#8DBB6E" stroke="#5E8C4A" stroke-width="2">
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(18 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(63 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(108 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(153 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(198 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(243 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(288 150 150)"/>
+    <ellipse cx="150" cy="106" rx="19" ry="42" transform="rotate(333 150 150)"/>
+  </g>
+
+  <g fill="#ABD18A" stroke="#73A35A" stroke-width="1.5">
+    <ellipse cx="150" cy="126" rx="13" ry="26"/>
+    <ellipse cx="150" cy="126" rx="13" ry="26" transform="rotate(72 150 150)"/>
+    <ellipse cx="150" cy="126" rx="13" ry="26" transform="rotate(144 150 150)"/>
+    <ellipse cx="150" cy="126" rx="13" ry="26" transform="rotate(216 150 150)"/>
+    <ellipse cx="150" cy="126" rx="13" ry="26" transform="rotate(288 150 150)"/>
+  </g>
+
+  <circle cx="150" cy="150" r="10" fill="#C7E4A8"/>
+</svg>

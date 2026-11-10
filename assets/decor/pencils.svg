@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="420" viewBox="0 0 200 420">
+  <!-- Placeholder: pensil warna dilihat dari atas. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <g id="pencil">
+      <polygon points="0,66 11,12 22,66" fill="#EDD2A8"/>
+      <polygon points="6.6,34 11,12 15.4,34" fill="currentColor"/>
+      <rect x="0" y="64" width="22" height="356" rx="2" fill="currentColor"/>
+      <rect x="0" y="64" width="7" height="356" fill="#FFFFFF" opacity="0.22"/>
+      <rect x="15" y="64" width="7" height="356" fill="#000000" opacity="0.16"/>
+    </g>
+  </defs>
+  <use href="#pencil" x="16" y="18" color="#D62828" transform="rotate(-3 27 420)"/>
+  <use href="#pencil" x="44" y="0" color="#E8833A" transform="rotate(-1 55 420)"/>
+  <use href="#pencil" x="72" y="26" color="#F2B705" transform="rotate(1 83 420)"/>
+  <use href="#pencil" x="100" y="8" color="#6BA368" transform="rotate(2 111 420)"/>
+  <use href="#pencil" x="128" y="30" color="#4A7FB5" transform="rotate(3 139 420)"/>
+  <use href="#pencil" x="156" y="12" color="#2B2522" transform="rotate(4 167 420)"/>
+</svg>

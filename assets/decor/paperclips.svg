@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="120" viewBox="0 0 140 120">
+  <!-- Placeholder: tiga klip kertas berlapis plastik. Ganti dengan ilustrasi asli, nama file tetap. -->
+  <defs>
+    <path id="clip" d="M8 50V12a6 6 0 0 1 12 0v44a9 9 0 0 1-18 0V18"/>
+  </defs>
+  <g fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#clip" stroke="#4A7FB5" transform="translate(14 22) rotate(-24 11 40)"/>
+    <use href="#clip" stroke="#D62828" transform="translate(58 8) rotate(10 11 40)"/>
+    <use href="#clip" stroke="#6BA368" transform="translate(98 34) rotate(32 11 40)"/>
+  </g>
+</svg>
