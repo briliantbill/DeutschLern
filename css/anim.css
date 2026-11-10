@@ -1,0 +1,674 @@
+/* =========================================================
+   DeutschLern — anim.css
+   Animasi grammar (js/anim.js): kartu kraft yang ditempel washi di
+   halaman buku. Semua warna lewat token di base.css.
+   ========================================================= */
+
+.anim {
+  position: relative;
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-2) 0 var(--space-5);
+  padding: var(--space-5) var(--space-4) var(--space-4);
+  border: 1.5px dashed color-mix(in srgb, var(--kraft) 80%, var(--ink));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--kraft) 14%, var(--paper-light));
+}
+
+.anim__tape {
+  position: absolute;
+  top: -12px;
+  left: var(--space-5);
+  width: 96px;
+  height: 24px;
+}
+
+.anim__label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.anim__hint,
+.anim-note {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  line-height: 1.45;
+}
+
+.anim-row,
+.anim-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.anim-chip {
+  min-height: 36px;
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-light);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.anim-chip:hover {
+  border-color: var(--kraft);
+}
+
+.anim-chip[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper-light);
+}
+
+.anim-seg {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-light);
+}
+
+.anim-seg .anim-chip {
+  min-height: 30px;
+  border: 0;
+}
+
+.anim-btn {
+  min-height: 40px;
+}
+
+.anim-red,
+.anim-bad {
+  color: var(--ink-red);
+}
+
+.anim-good {
+  margin: 0;
+  color: var(--article-das);
+  font-weight: 700;
+}
+
+.anim-bad {
+  margin: 0;
+  font-weight: 700;
+}
+
+.anim-out {
+  display: grid;
+  gap: 2px;
+  min-height: 2.5em;
+}
+
+.anim-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  font-weight: 700;
+  font-size: var(--text-lg);
+}
+
+.anim-line__id {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+/* ---------- Langkah 1-2-3 ---------- */
+.anim-steps {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.anim-steps li {
+  display: grid;
+  grid-template-columns: 1.6em 1fr;
+  align-items: baseline;
+  opacity: 0.35;
+  transition: opacity 0.3s;
+}
+
+.anim-steps li.is-on {
+  opacity: 1;
+}
+
+.anim-steps li > b {
+  font-family: var(--font-hand);
+  font-size: 1.35rem;
+  color: var(--ink-red);
+  line-height: 1;
+}
+
+.anim-steps li.is-now > span {
+  width: fit-content;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--accent-yellow) 45%, transparent);
+}
+
+.anim-cut {
+  color: var(--ink-red);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+}
+
+/* ---------- akhiran ---------- */
+.anim-stage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.3em;
+  min-height: 1.5em;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 1.6rem + 2.6vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.anim-pron {
+  color: var(--ink-soft);
+  font-weight: 400;
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.anim-stage.s0 .anim-pron {
+  opacity: 0;
+  transform: translateX(-0.25em);
+}
+
+.anim-word {
+  display: inline-flex;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.anim-inf {
+  position: relative;
+  display: inline-block;
+  max-width: 1.6em;
+  overflow: hidden;
+  transition: color 0.3s, max-width 0.5s ease 0.55s, opacity 0.4s ease 0.55s, transform 0.5s ease 0.55s;
+}
+
+.anim-inf::after {
+  content: "";
+  position: absolute;
+  top: 56%;
+  right: 0;
+  left: 0;
+  height: 0.08em;
+  background: var(--ink-red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease 0.1s;
+}
+
+.anim-stage.s1 .anim-inf,
+.anim-stage.s2 .anim-inf {
+  max-width: 0;
+  color: var(--ink-red);
+  opacity: 0;
+  transform: translateY(0.45em) rotate(8deg);
+}
+
+.anim-stage.s1 .anim-inf::after,
+.anim-stage.s2 .anim-inf::after {
+  transform: scaleX(1);
+}
+
+.anim-end {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--accent-yellow);
+  opacity: 0;
+  transform: translateY(-0.6em);
+  transition: max-width 0.45s ease, opacity 0.3s, transform 0.5s cubic-bezier(0.3, 1.5, 0.5, 1), padding 0.45s;
+}
+
+.anim-stage.s2 .anim-end {
+  max-width: 2.4em;
+  padding: 0 0.05em;
+  opacity: 1;
+  transform: none;
+}
+
+.anim-slot {
+  display: none;
+}
+
+.anim-stage.ask .anim-slot {
+  display: inline-block;
+  width: 1.25em;
+  height: 0.95em;
+  margin-left: 0.06em;
+  border: 0.06em dashed var(--ink-red);
+  border-radius: 4px;
+  background: var(--paper-light);
+}
+
+.anim-stage.shake .anim-slot {
+  animation: anim-shake 0.4s;
+}
+
+.anim-stage.no-anim *,
+.anim-stage.no-anim *::after {
+  transition: none !important;
+}
+
+.anim-pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.anim-token-btn {
+  min-width: 3.2em;
+  min-height: 44px;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+  box-shadow: 2px 3px 0 var(--kraft);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.anim-token-btn:hover {
+  background: var(--accent-yellow);
+}
+
+/* ---------- Kartu balik ---------- */
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-2);
+}
+
+.flip-card {
+  min-height: 108px;
+  padding: 0;
+  border: 0;
+  background: none;
+  perspective: 800px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.flip-card__in {
+  position: relative;
+  display: grid;
+  height: 100%;
+  min-height: 108px;
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card[aria-pressed="true"] .flip-card__in {
+  transform: rotateY(180deg);
+}
+
+.flip-card__face {
+  grid-area: 1 / 1;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 2px;
+  padding: var(--space-2);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.flip-card__front {
+  background: var(--paper-light);
+  box-shadow: 2px 3px 0 var(--paper-dark);
+  font-weight: 700;
+}
+
+.flip-card--extra .flip-card__front {
+  border-style: dashed;
+}
+
+.flip-card__q {
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--ink-red);
+}
+
+.flip-card__back {
+  background: color-mix(in srgb, var(--accent-yellow) 35%, var(--paper-light));
+  transform: rotateY(180deg);
+}
+
+.flip-card__big {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.flip-card__big--du {
+  color: var(--article-das);
+}
+
+.flip-card__big--sie {
+  color: var(--article-der);
+}
+
+.flip-card__small {
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.flip-card__id {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+/* ---------- posisi 2 ---------- */
+.slot-board {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(0, 1.3fr);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  overflow: visible;
+  background: var(--paper-light);
+}
+
+.slot-board__col {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  border-right: 1.5px dashed var(--line);
+}
+
+.slot-board__col:last-child {
+  border-right: 0;
+}
+
+.slot-board__col--verb {
+  background: color-mix(in srgb, var(--accent-yellow) 28%, var(--paper-light));
+}
+
+.slot-board__head {
+  margin: 0;
+  padding: 4px var(--space-2);
+  border-bottom: 1.5px dashed var(--line);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.slot-board__col--verb .slot-board__head {
+  background: var(--accent-yellow);
+  color: var(--ink);
+}
+
+.slot-board__slot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  min-height: 4.6em;
+  padding: var(--space-3) var(--space-2);
+}
+
+.slot-board.is-hold .slot-board__col--verb {
+  animation: anim-hold 1.3s ease;
+}
+
+.anim-tok {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.anim-tok__de {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 0.85rem + 0.7vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  overflow-wrap: normal;
+}
+
+.anim-tok__id {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.anim-tok.is-q {
+  z-index: 3;
+}
+
+.anim-tok.is-q .anim-tok__de {
+  color: var(--ink-red);
+}
+
+.anim-tok.is-asked .anim-tok__de {
+  color: var(--ink-red);
+  text-decoration: line-through;
+  text-decoration-thickness: 0.08em;
+}
+
+.anim-tok.is-out,
+.es-name.is-out {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.45s, transform 0.45s;
+}
+
+.is-pop {
+  animation: anim-pop 0.55s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+
+/* ---------- er / sie ---------- */
+.es-board {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+}
+
+.es-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35em;
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+.es-name {
+  display: inline-block;
+  color: var(--article-der);
+}
+
+.es-name.is-asked {
+  color: var(--ink-red);
+  text-decoration: line-through;
+}
+
+.es-slot {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.es-pron {
+  display: inline-block;
+  padding: 0 0.15em;
+  border-radius: 3px;
+  background: var(--accent-yellow);
+}
+
+.es-tag {
+  margin-left: 0.3em;
+  white-space: nowrap;
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--ink-red);
+}
+
+/* ---------- aus ---------- */
+.aus-board {
+  display: grid;
+  gap: 2px;
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+}
+
+.aus-aus {
+  color: var(--article-der);
+}
+
+.aus-art {
+  padding: 0 0.15em;
+  border-radius: 3px;
+  background: var(--accent-yellow);
+}
+
+.aus-lang {
+  color: var(--article-das);
+}
+
+/* ---------- angka ---------- */
+.anim-num input {
+  width: 5.5em;
+  min-height: 40px;
+  padding: 0 var(--space-2);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.num-digit {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.num-board {
+  min-height: 3.6em;
+}
+
+.num-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+  transition: gap 0.6s ease;
+}
+
+.num-row.is-join {
+  gap: 0;
+}
+
+.num-tok--ten .anim-tok__de,
+.num-ten {
+  color: var(--ink-red);
+}
+
+.num-tok--one .anim-tok__de,
+.num-one {
+  color: var(--article-der);
+}
+
+.num-tok--und .anim-tok__de,
+.num-und {
+  color: var(--ink-soft);
+}
+
+.num-word {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 1.2rem + 2vw, 2.6rem);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.num-und {
+  font-weight: 400;
+}
+
+/* ---------- Gerak ---------- */
+@keyframes anim-pop {
+  from { opacity: 0; transform: scale(0.3); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes anim-shake {
+  20% { transform: translateX(-0.12em); }
+  40% { transform: translateX(0.12em); }
+  60% { transform: translateX(-0.08em); }
+  80% { transform: translateX(0.06em); }
+}
+
+@keyframes anim-hold {
+  0%, 100% { box-shadow: inset 0 0 0 0 var(--ink-red); }
+  25%, 75% { box-shadow: inset 0 0 0 3px var(--ink-red); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim *,
+  .anim *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .slot-board__slot {
+    min-height: 4em;
+    padding: var(--space-2) 6px;
+  }
+
+  .anim-tok__de {
+    font-size: 0.98rem;
+  }
+
+  .slot-board__head {
+    font-size: 0.7rem;
+  }
+
+  .flip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

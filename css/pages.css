@@ -1,0 +1,1737 @@
+/* =========================================================
+   DeutschLern — pages.css
+   Area konten di bawah navbar dan gaya khusus tiap halaman.
+   ========================================================= */
+
+/* ---------- Area konten ---------- */
+.page {
+  position: relative;
+  display: block;
+  min-height: 62vh;
+  padding: calc(var(--space-7) + 10px) clamp(var(--space-4), 4vw, var(--space-8)) var(--space-8);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background-color: var(--paper-dark);
+  background-image: linear-gradient(180deg, rgba(43, 37, 34, 0.08), transparent 80px);
+}
+
+.page:focus {
+  outline: none;
+}
+
+.noscript {
+  max-width: 40ch;
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ---------- Halaman sementara ----------
+   Dipakai menu yang isinya belum dibuat. */
+.placeholder {
+  max-width: 620px;
+  margin: var(--space-4) auto 0;
+  text-align: center;
+}
+
+.placeholder__paper {
+  --paper-pad: var(--space-7) clamp(var(--space-5), 5vw, var(--space-8)) calc(var(--space-6) + 8px);
+}
+
+.placeholder__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-3xl);
+}
+
+.flag-rule {
+  display: block;
+  width: 72px;
+  height: 9px;
+  margin: 0 auto var(--space-4);
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--de-black) 0 33.34%, var(--de-red) 33.34% 66.67%, var(--de-gold) 66.67% 100%);
+}
+
+.placeholder__de {
+  margin-bottom: var(--space-5);
+  color: var(--ink-red);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 500;
+}
+
+.placeholder__meaning {
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.placeholder__note {
+  display: inline-block;
+  max-width: 30ch;
+  margin: 0;
+  color: var(--ink-soft);
+  font-family: var(--font-hand);
+  font-size: 1.65rem;
+  line-height: 1.2;
+  --tilt: -1.5deg;
+  transform: rotate(var(--tilt));
+}
+
+.placeholder__actions {
+  margin-top: var(--space-5);
+}
+
+.placeholder__action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--accent-yellow);
+  box-shadow: 2px 3px 0 var(--kraft);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--duration) var(--ease-out);
+}
+
+.placeholder__action:hover {
+  transform: translateY(-1px);
+}
+
+/* ---------- Beranda ---------- */
+.home-notebook .notebook__page {
+  min-height: 540px;
+}
+
+/* Halaman kiri */
+.home__corner-tape {
+  position: absolute;
+  top: 12px;
+  left: -16px;
+  z-index: 1;
+  width: 96px;
+  height: 24px;
+}
+
+.home__stamp {
+  position: absolute;
+  top: var(--space-4);
+  right: calc(var(--space-4) + 18px);
+}
+
+/* Mulai di bawah stiker cap agar tidak tertutup */
+.home__title {
+  max-width: 12ch;
+  margin: var(--space-8) auto var(--space-3);
+  font-size: var(--text-3xl);
+  line-height: 1.1;
+  text-align: center;
+}
+
+.home__welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-hand);
+  font-size: clamp(2.1rem, 1.6rem + 1.4vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home__spark {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: var(--accent-orange);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.home__spark--right {
+  transform: scaleX(-1);
+}
+
+.home-scene {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "bear pretzel"
+    "bear tor"
+    "bear danke";
+  align-items: center;
+  justify-items: center;
+  gap: var(--space-2) var(--space-3);
+}
+
+.home-scene__bear {
+  position: relative;
+  grid-area: bear;
+  padding-top: 48px;
+}
+
+.home-scene__hallo {
+  position: absolute;
+  top: 0;
+  right: -14px;
+}
+
+.home-scene__pretzel {
+  grid-area: pretzel;
+}
+
+.home-scene__tor {
+  grid-area: tor;
+}
+
+.home-scene__danke {
+  grid-area: danke;
+}
+
+/* Halaman kanan */
+.home__flag {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-5);
+}
+
+.home__hello {
+  margin: var(--space-2) 0 0;
+  padding-right: 64px;
+  font-family: var(--font-hand);
+  font-size: clamp(2rem, 1.6rem + 1vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.home__hello-sub {
+  margin-bottom: var(--space-5);
+  color: var(--ink-soft);
+}
+
+.home__warning {
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px dashed var(--de-red);
+  border-radius: var(--radius-sm);
+  color: var(--ink-red);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.home__block + .home__block {
+  margin-top: var(--space-6);
+}
+
+.home__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-2);
+  margin-bottom: var(--space-4);
+  font-size: 1.3rem;
+}
+
+.home__label-de {
+  color: var(--ink-red);
+  font-family: var(--font-hand);
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.home__empty {
+  color: var(--ink-soft);
+}
+
+.home-continue__status {
+  display: block;
+  margin-top: var(--space-2);
+  color: var(--ticket-muted);
+  font-size: var(--text-sm);
+}
+
+.home-continue__cta {
+  display: inline-block;
+  margin-top: var(--space-2);
+  border-bottom: 2px solid currentColor;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Kartu kata hari ini */
+.word-card__date {
+  margin-bottom: var(--space-2);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.word-card__term {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 1.4rem + 1vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.word-card__type,
+.word-card__extra {
+  margin-bottom: var(--space-1);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.word-card__type {
+  font-style: italic;
+}
+
+.word-card__meaning {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.word-card__example {
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--kraft);
+}
+
+.word-card__example p {
+  margin: 0;
+}
+
+.word-card__example [lang="de"] {
+  font-weight: 700;
+}
+
+.word-card__example-id {
+  color: var(--ink-soft);
+}
+
+.word-card__source {
+  display: inline-block;
+  margin-top: var(--space-3);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.word-card__source:hover {
+  color: var(--ink-red);
+}
+
+/* Buku satu halaman */
+@media (max-width: 879px) {
+  .home-notebook .notebook__page {
+    min-height: 0;
+  }
+
+  .home__title {
+    margin-top: var(--space-7);
+  }
+
+  .home-scene__hallo {
+    right: -6px;
+  }
+}
+
+/* ---------- Materi: daftar bab (#/materi) ---------- */
+.lessons {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lessons__head {
+  max-width: 640px;
+  margin: 0 auto var(--space-7);
+  text-align: center;
+  --paper-pad: var(--space-6) clamp(var(--space-5), 5vw, var(--space-7)) calc(var(--space-6) + 6px);
+}
+
+.lessons__compass {
+  position: absolute;
+  top: 0;
+  right: clamp(0px, 4vw, 60px);
+}
+
+.lessons__kicker {
+  margin: 0;
+  color: var(--ink-red);
+  font-family: var(--font-hand);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lessons__title {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-3xl);
+}
+
+.lessons__intro {
+  margin-bottom: var(--space-3);
+  color: var(--ink-soft);
+}
+
+.lessons__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+}
+
+.lessons__bar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.lessons__bar-step {
+  width: 14px;
+  height: 10px;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  background: var(--paper-light);
+}
+
+.lessons__bar-step--sedang {
+  background: linear-gradient(90deg, var(--accent-yellow) 50%, var(--paper-light) 50%);
+}
+
+.lessons__bar-step--selesai {
+  background: var(--accent-green);
+}
+
+.lessons__warning {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-2) var(--space-3);
+  border: 1.5px dashed var(--de-red);
+  border-radius: var(--radius-sm);
+  color: var(--ink-red);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.lessons__empty {
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* Empat perjalanan berupa halaman paspor */
+.passport-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-7) var(--space-6);
+}
+
+.passport {
+  --paper-bg: color-mix(in srgb, var(--kraft) 16%, var(--paper));
+  --paper-texture: repeating-radial-gradient(circle at 100% 0,
+    transparent 0 18px,
+    color-mix(in srgb, var(--accent-blue) 8%, transparent) 18px 19px);
+  --paper-pad: var(--space-6) var(--space-5) var(--space-5);
+  height: 100%;
+}
+
+.passport .paper__sheet {
+  height: 100%;
+}
+
+/* Bingkai tipis di dalam halaman paspor */
+.passport .paper__sheet::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1.5px solid color-mix(in srgb, var(--wood) 35%, transparent);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.passport__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.passport__kicker {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.passport__title {
+  margin-bottom: 0;
+  font-size: var(--text-2xl);
+}
+
+.passport__meta {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.passport__stamp {
+  display: grid;
+  flex: none;
+  place-content: center;
+  justify-items: center;
+  width: 84px;
+  height: 84px;
+  border: 4px double var(--ink-red);
+  border-radius: 50%;
+  color: var(--ink-red);
+  font-family: var(--font-display);
+  line-height: 1;
+  --tilt: -10deg;
+  transform: rotate(var(--tilt));
+}
+
+.passport__stamp-word {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.passport__stamp-number {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* Rute: garis putus-putus menyambung tiket-tiket */
+.passport__route {
+  position: relative;
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.passport__route::before {
+  content: "";
+  position: absolute;
+  top: var(--space-4);
+  bottom: var(--space-4);
+  left: 58px;
+  border-left: 3px dashed color-mix(in srgb, var(--wood) 70%, transparent);
+}
+
+.passport__stop {
+  position: relative;
+  display: flex;
+  container-type: inline-size;
+}
+
+.chapter-ticket {
+  flex: 1;
+}
+
+.chapter-ticket .ticket__body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  height: 100%;
+  padding: var(--space-5) var(--space-6);
+  text-align: left;
+}
+
+/* Tinggi dikunci agar stiker yang ramping (klip kertas) tidak membesarkan tiket */
+.chapter-ticket__icon .sticker {
+  display: block;
+  --sticker-size: 68px;
+  height: var(--sticker-size);
+  object-fit: contain;
+}
+
+.chapter-ticket .ticket__title {
+  margin: 0;
+}
+
+.chapter-ticket__subtitle {
+  display: block;
+  font-weight: 700;
+}
+
+.chapter-ticket .ticket__meta {
+  margin-top: var(--space-1);
+}
+
+/* Sobekan tiket: kolom status dipisah garis putus-putus */
+.chapter-ticket__status {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding-left: var(--space-4);
+  border-left: 1.5px dashed var(--ticket-line);
+}
+
+/* Tiket sempit (mis. dua kolom di tablet): status pindah ke bawah judul */
+@container (max-width: 480px) {
+  .chapter-ticket .ticket__body {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-2) var(--space-4);
+  }
+
+  .chapter-ticket__status {
+    grid-column: 2;
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+/* ---------- Materi: buku bab (#/materi/:id) ---------- */
+.chapter-head {
+  max-width: 860px;
+  margin: 0 auto var(--space-6);
+  text-align: center;
+}
+
+.chapter-head__back {
+  margin-bottom: var(--space-2);
+}
+
+.chapter-head__main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3) var(--space-5);
+}
+
+.chapter-head__icon {
+  --sticker-size: 72px;
+  height: var(--sticker-size);
+  object-fit: contain;
+}
+
+.chapter-head__titles {
+  text-align: left;
+}
+
+.chapter-head__title {
+  margin: 0;
+  font-size: var(--text-2xl);
+  line-height: 1.15;
+}
+
+.chapter-head__num {
+  display: block;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.chapter-head__ref {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--space-2);
+  margin: var(--space-1) 0 0;
+}
+
+.chapter-head__journey {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.chapter-head__subtitle {
+  margin: 0;
+  color: var(--ink-red);
+  font-family: var(--font-hand);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Lernziele: catatan tempel di bawah kepala halaman */
+.goals.chapter__goals {
+  max-width: 640px;
+  margin: var(--space-5) auto var(--space-6);
+}
+
+.goals__id {
+  color: var(--ink-soft);
+}
+
+/* Tips guru (hanya tampil di Mode Guru) */
+.teacher-notes {
+  max-width: 760px;
+  margin: 0 auto var(--space-5);
+  padding: var(--space-4) var(--space-5);
+  border: 2px dashed var(--ink);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent-yellow) 22%, var(--paper-light));
+}
+
+.teacher-notes__title {
+  margin-bottom: var(--space-2);
+  font-size: 1.1rem;
+}
+
+.teacher-notes__list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.teacher-notes__empty {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* Baris alat: saring kata penting, Mode Guru, tanda selesai */
+.chapter-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.chapter-tools__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-left: auto;
+}
+
+.wichtig-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wichtig-filter input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--ink);
+}
+
+.wichtig-filter__star {
+  --sticker-size: 22px;
+}
+
+.article-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-1) var(--space-4);
+  margin: 0 0 var(--space-4);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.article-legend__label {
+  font-weight: 700;
+}
+
+.chapter__tip {
+  margin: var(--space-6) 0 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+.chapter__tip kbd {
+  display: inline-block;
+  min-width: 1.8em;
+  padding: 0 0.35em;
+  border: 1.5px solid var(--ink-soft);
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  background: var(--paper-light);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Isi halaman buku */
+.book-page__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-2);
+  margin-bottom: var(--space-1);
+  font-size: 1.35rem;
+}
+
+.book-page__de {
+  color: var(--ink-red);
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.book-page__part {
+  margin: 0 0 var(--space-2);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.book-page__empty {
+  margin: var(--space-3) 0 var(--space-2);
+  color: var(--ink-soft);
+  font-family: var(--font-hand);
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Ringkasan dari kotak daftar isi buku */
+.book-note {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--accent-yellow);
+  background: color-mix(in srgb, var(--accent-yellow) 12%, var(--paper-light));
+}
+
+.book-note__label {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 800;
+}
+
+.book-note__text {
+  margin: 0;
+}
+
+.chapter-book .notebook__page {
+  min-height: 560px;
+}
+
+/* Kosakata */
+.vocab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vocab {
+  padding: var(--space-2) 0 var(--space-3);
+  border-bottom: 1.5px dashed var(--line);
+}
+
+.vocab:last-child {
+  border-bottom: 0;
+}
+
+.vocab p {
+  margin: 0;
+}
+
+.vocab__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--space-2);
+}
+
+.vocab__star,
+.vocab__head .say-tools {
+  align-self: center;
+}
+
+.vocab__star {
+  --sticker-size: 20px;
+}
+
+/* Referensi Kursbuch: di ujung kanan baris, turun sendiri bila tidak muat */
+.vocab__ref {
+  margin-left: auto;
+}
+
+.vocab__term {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.vocab__term .article {
+  font-size: 0.85em;
+}
+
+.vocab__meaning {
+  font-weight: 700;
+}
+
+.vocab__info {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.vocab .vocab__example {
+  margin-top: 2px;
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--kraft);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.vocab--der .vocab__example {
+  border-left-color: color-mix(in srgb, var(--accent-blue) 55%, transparent);
+}
+
+.vocab--die .vocab__example {
+  border-left-color: color-mix(in srgb, var(--de-red) 50%, transparent);
+}
+
+.vocab--das .vocab__example {
+  border-left-color: color-mix(in srgb, var(--accent-green) 60%, transparent);
+}
+
+.vocab__example-de {
+  display: block;
+  font-weight: 600;
+}
+
+.vocab__example-id {
+  display: block;
+  color: var(--ink-soft);
+}
+
+/* Tujuan bab: catatan tempel kuning */
+.goals {
+  position: relative;
+  margin: var(--space-3) var(--space-1) var(--space-6);
+  padding: var(--space-5) var(--space-4) var(--space-3);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent-yellow) 28%, var(--paper-light));
+  box-shadow: var(--shadow-paper);
+  --tilt: -0.8deg;
+  transform: rotate(var(--tilt));
+}
+
+.goals__tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 84px;
+  height: 22px;
+  margin-left: -42px;
+}
+
+.goals__title {
+  margin-bottom: var(--space-1);
+  font-size: 1.1rem;
+}
+
+.goals__list {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.95rem;
+}
+
+.goals__list li::marker {
+  color: var(--ink-red);
+}
+
+.goals__title .book-page__de {
+  font-size: 1.25rem;
+}
+
+/* Dialog: naskah dengan nama pembicara di depan kalimat */
+.dialogue__title {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: 1.15rem;
+}
+
+.dialogue {
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dialogue__line {
+  padding: var(--space-2) 0;
+  border-bottom: 1.5px dotted var(--line);
+}
+
+.dialogue__line:last-child {
+  border-bottom: 0;
+}
+
+.dialogue__who {
+  display: inline-block;
+  margin-right: var(--space-2);
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dialogue__line--a .dialogue__who {
+  color: var(--article-der);
+}
+
+.dialogue__line--b .dialogue__who {
+  color: var(--ink-red);
+}
+
+.dialogue__line--c .dialogue__who {
+  color: var(--article-das);
+}
+
+.dialogue__de {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.dialogue__id {
+  display: block;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+
+/* Grammar */
+.grammar__title {
+  margin: var(--space-3) 0 var(--space-2);
+  font-size: 1.15rem;
+}
+
+.grammar__ref {
+  margin: 0 0 var(--space-2);
+}
+
+.grammar__text {
+  margin-bottom: var(--space-4);
+}
+
+.grammar__label {
+  margin: var(--space-4) 0 var(--space-2);
+  font-size: 1rem;
+}
+
+.grammar__label:first-child {
+  margin-top: 0;
+}
+
+.grammar__examples,
+.grammar__mistakes {
+  margin: 0 0 var(--space-3);
+  padding-left: 1.2em;
+}
+
+.grammar__examples [lang="de"] {
+  font-weight: 700;
+}
+
+.grammar__example-id {
+  display: block;
+  color: var(--ink-soft);
+}
+
+.grammar__wrong {
+  color: var(--ink-red);
+  text-decoration: line-through;
+}
+
+.grammar__right {
+  color: var(--article-das);
+  font-weight: 700;
+}
+
+.grammar__table-wrap {
+  border-radius: var(--radius-sm);
+}
+
+.grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper-light);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.grammar-table th,
+.grammar-table td {
+  padding: 0.4rem 0.6rem;
+  border: 1.5px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.grammar-table thead th {
+  background: var(--paper-dark);
+  font-family: var(--font-display);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.grammar-table tbody th {
+  font-weight: 700;
+}
+
+.grammar-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--paper-dark) 45%, var(--paper-light));
+}
+
+.grammar-table .cell--der,
+.grammar-table .cell--die,
+.grammar-table .cell--das {
+  font-weight: 700;
+}
+
+/* Latihan singkat */
+.quiz-intro {
+  margin-bottom: var(--space-3);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.quiz-list {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: quiz;
+}
+
+.quiz {
+  position: relative;
+  padding: var(--space-3) var(--space-3) var(--space-2) calc(var(--space-3) + 30px);
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  counter-increment: quiz;
+}
+
+.quiz::before {
+  content: counter(quiz);
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-2);
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.quiz.is-solved {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--accent-green) 70%, transparent);
+}
+
+.quiz.is-solved::before {
+  content: "✓";
+  border-color: var(--article-das);
+  background: color-mix(in srgb, var(--accent-green) 35%, var(--paper-light));
+}
+
+.quiz p {
+  margin: 0;
+}
+
+.quiz__question {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.quiz__blank {
+  display: inline-block;
+  min-width: 3.2em;
+  margin: 0 0.15em;
+  border-bottom: 2px solid var(--ink);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.quiz__blank.is-filled {
+  min-width: 0;
+  padding: 0 0.2em;
+  border-bottom-color: var(--article-das);
+  color: var(--article-das);
+}
+
+.quiz__hint {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+.quiz__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.quiz__option {
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--paper-light);
+  box-shadow: 1px 2px 0 var(--kraft);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--duration) var(--ease-out), background-color var(--duration);
+}
+
+.quiz__option:hover:not([aria-disabled="true"]) {
+  background: var(--tint-cream);
+  transform: translateY(-1px);
+}
+
+.quiz__option[aria-disabled="true"] {
+  cursor: default;
+}
+
+.quiz__option.is-wrong {
+  border-color: var(--ink-red);
+  background: color-mix(in srgb, var(--de-red) 8%, var(--paper-light));
+  color: var(--ink-red);
+  text-decoration: line-through;
+  animation: quiz-shake 320ms var(--ease-out);
+}
+
+.quiz__option.is-correct {
+  border-color: var(--article-das);
+  background: color-mix(in srgb, var(--accent-green) 28%, var(--paper-light));
+}
+
+.quiz.is-solved .quiz__option:not(.is-correct):not(.is-wrong) {
+  opacity: 0.55;
+}
+
+.quiz .quiz__feedback {
+  margin-top: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+/* Kunci jawaban (hanya tampil di Mode Guru) */
+.quiz .quiz__key {
+  margin-top: var(--space-1);
+  padding: 0 var(--space-2);
+  border-left: 3px solid var(--accent-yellow);
+  font-size: var(--text-sm);
+}
+
+.quiz__source {
+  font-style: italic;
+}
+
+/* Soal isian */
+.exercise__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.exercise__input {
+  flex: 1 1 10rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 var(--space-3);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-sm);
+  background: var(--paper-light);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.exercise__input[readonly] {
+  border-color: var(--article-das);
+  background: color-mix(in srgb, var(--accent-green) 14%, var(--paper-light));
+}
+
+.exercise .btn:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.quiz__feedback:empty {
+  display: none;
+}
+
+.quiz__feedback.is-wrong {
+  color: var(--ink-red);
+  font-weight: 700;
+}
+
+.quiz__feedback.is-correct > [lang="de"]:first-child {
+  color: var(--article-das);
+  font-weight: 800;
+}
+
+@keyframes quiz-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.quiz-done {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border: 2px dashed var(--article-das);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent-green) 10%, var(--paper-light));
+  text-align: center;
+}
+
+.quiz-done__stamp {
+  display: inline-block;
+  padding: 0.15rem 0.8rem;
+  border: 4px double var(--article-das);
+  border-radius: 6px;
+  background: var(--paper-light);
+  color: var(--article-das);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  --tilt: -5deg;
+  transform: rotate(var(--tilt));
+}
+
+.quiz-done__text {
+  margin: var(--space-3) 0;
+}
+
+.quiz-done__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+/* Plattform */
+.plattform__sources-title {
+  margin-top: var(--space-5);
+}
+
+.source-list {
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.source-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1.5px dashed var(--line);
+  font-weight: 700;
+}
+
+/* Sisi kosong lawan halaman ganjil: ruang catatan */
+.notes-page {
+  display: grid;
+  place-items: center;
+  gap: var(--space-2);
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+
+.notes-page p {
+  margin: 0;
+}
+
+.notes-page__hand {
+  color: var(--ink-soft);
+  font-family: var(--font-hand);
+  font-size: 2rem;
+}
+
+.notes-page__id {
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 879px) {
+  .passport-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .lessons__compass {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .lessons__head {
+    margin-bottom: var(--space-6);
+  }
+
+  .passport {
+    --paper-pad: var(--space-5) var(--space-4) var(--space-4);
+  }
+
+  .passport__stamp {
+    width: 68px;
+    height: 68px;
+  }
+
+  .passport__stamp-number {
+    font-size: 1.5rem;
+  }
+
+  .passport__route::before {
+    left: 46px;
+  }
+
+  .chapter-ticket .ticket__body {
+    gap: var(--space-2) var(--space-3);
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .chapter-ticket__icon .sticker {
+    --sticker-size: 52px;
+  }
+
+  .chapter-head__icon {
+    --sticker-size: 56px;
+  }
+
+  .chapter__tip {
+    display: none;
+  }
+
+  .washi-tab {
+    padding: 0.35rem 0.95rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Buku satu halaman: tinggi mengikuti isi */
+@media (max-width: 879px) {
+  .chapter-book .notebook__page {
+    min-height: 0;
+  }
+}
+
+/* ---------- Style guide (#/komponen) ---------- */
+.kit {
+  display: grid;
+  gap: var(--space-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kit__intro {
+  width: min(100%, 640px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kit__title {
+  font-size: var(--text-3xl);
+}
+
+.kit__lead {
+  color: var(--ink-soft);
+}
+
+.kit__heading {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-2xl);
+}
+
+.kit__code {
+  margin-bottom: var(--space-6);
+}
+
+.kit code {
+  padding: 0.05em 0.35em;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.kit__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+  gap: var(--space-7) var(--space-5);
+  align-items: start;
+}
+
+.kit__grid--tickets {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: var(--space-5);
+}
+
+.kit-label {
+  margin-bottom: var(--space-2);
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kit-de {
+  margin-bottom: 0;
+  color: var(--ink-red);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.kit-id {
+  margin-bottom: 0;
+}
+
+.kit-washi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: var(--space-5) var(--space-6);
+}
+
+.kit-washi__tape {
+  width: 100%;
+  height: 30px;
+}
+
+.kit-washi__label {
+  margin: var(--space-2) 0 0;
+  font-weight: 700;
+}
+
+.kit-ticket-nav {
+  margin-top: var(--space-6);
+}
+
+.kit__subheading {
+  margin: var(--space-7) 0 var(--space-5);
+  color: var(--ink-soft);
+  font-family: var(--font-hand);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.kit__code + .kit__subheading {
+  margin-top: 0;
+}
+
+.kit-mini {
+  margin-top: var(--space-3);
+}
+
+.kit-mini code {
+  font-size: 0.75rem;
+}
+
+.kit-washi-list--plain {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+}
+
+.kit-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.kit-btn-row + .kit-btn-row {
+  margin-top: var(--space-4);
+}
+
+.kit-states {
+  max-width: 560px;
+  margin: var(--space-6) 0 0;
+  padding: var(--space-4) var(--space-5) var(--space-4) calc(var(--space-5) + 1.2rem);
+  border: 1.5px dashed var(--kraft);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--paper-light) 60%, transparent);
+}
+
+.kit-states li + li {
+  margin-top: var(--space-1);
+}
+
+.kit-row--stamp {
+  gap: var(--space-7);
+  margin-bottom: 0;
+}
+
+.kit-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.kit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-7);
+  margin-bottom: var(--space-7);
+}
+
+.kit-row--bubbles {
+  gap: var(--space-6);
+  margin: var(--space-6) 0 0;
+}
+
+.kit-stickers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: var(--space-6) var(--space-4);
+  align-items: end;
+}
+
+.kit-sticker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  text-align: center;
+}
+
+/* Contoh isi buku catatan */
+.kit-nb__title {
+  font-size: var(--text-2xl);
+}
+
+.kit-nb__sub {
+  display: block;
+}
+
+.kit-nb__hand {
+  margin-bottom: var(--space-4);
+  font-family: var(--font-hand);
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.kit-nb__hand--small {
+  margin: var(--space-5) 0 0;
+  color: var(--ink-soft);
+  font-size: 1.7rem;
+}
+
+.kit-nb__scene {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.kit-nb__bear {
+  position: relative;
+  padding-top: var(--space-6);
+  text-align: center;
+}
+
+.kit-nb__hallo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kit-nb__props {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.kit-nb__flag {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+}
+
+.kit-nb__list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.kit-nb__list li {
+  margin-bottom: var(--space-3);
+}
+
+.kit-nb__list li::marker {
+  color: var(--kraft);
+}
+
+.kit-ref-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 0;
+}
+
+.kit-audio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  align-items: start;
+  gap: var(--space-6);
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 879px) {
+  .kit-nb__title {
+    padding-right: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: calc(var(--space-6) + 10px) var(--space-3) var(--space-7);
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  .placeholder__paper {
+    --paper-pad: var(--space-6) var(--space-4) calc(var(--space-5) + 8px);
+  }
+
+  .placeholder__note {
+    font-size: 1.5rem;
+  }
+
+  .kit {
+    gap: var(--space-7);
+  }
+}
