@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeutschLern — jurnal belajar Bahasa Jerman tingkat pemula (A1) untuk penutur Bahasa Indonesia.">
+  <meta name="theme-color" content="#A9744F">
+  <meta name="color-scheme" content="light">
+  <title>DeutschLern</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FBF6EC'/%3E%3Crect x='10' y='14' width='44' height='12' fill='%231F1F1F'/%3E%3Crect x='10' y='26' width='44' height='12' fill='%23D62828'/%3E%3Crect x='10' y='38' width='44' height='12' fill='%23F2B705'/%3E%3C/svg%3E">
+
+  <!-- Font dimuat lewat @import di base.css; preconnect mempercepatnya. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/anim.css">
+</head>
+<body>
+  <a class="skip-link" href="#app" data-skip-link>Langsung ke konten</a>
+
+  <!-- Hiasan meja: dekorasi saja, disembunyikan dari pembaca layar -->
+  <div class="desk-decor" aria-hidden="true">
+    <img class="desk-decor__item desk-decor__item--pencils" src="assets/decor/pencils.svg" alt="">
+    <img class="desk-decor__item desk-decor__item--paperclips" src="assets/decor/paperclips.svg" alt="">
+    <img class="desk-decor__item desk-decor__item--tickets" src="assets/decor/old-tickets.svg" alt="">
+    <img class="desk-decor__item desk-decor__item--plant" src="assets/decor/plant.svg" alt="">
+    <img class="desk-decor__item desk-decor__item--coffee" src="assets/decor/coffee-cup.svg" alt="">
+  </div>
+
+  <div class="browser">
+    <!-- Bilah jendela browser (dekoratif) -->
+    <div class="browser__bar" aria-hidden="true">
+      <span class="browser__dots">
+        <span class="browser__dot browser__dot--red"></span>
+        <span class="browser__dot browser__dot--yellow"></span>
+        <span class="browser__dot browser__dot--green"></span>
+      </span>
+      <span class="browser__address" data-address-bar>deutschlern</span>
+    </div>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#/beranda">
+        <span class="washi washi--kraft brand__tape" aria-hidden="true"></span>
+        <span class="brand__text">DeutschLern</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Menu utama">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <button class="site-nav__link" type="button" aria-expanded="false" aria-controls="menu-materi" data-nav="materi" data-dropdown-toggle>
+              <span class="site-nav__label">Materi</span>
+              <svg class="site-nav__chevron" viewBox="0 0 12 8" aria-hidden="true" focusable="false"><path d="M1.5 1.5 6 6l4.5-4.5"/></svg>
+            </button>
+            <div class="dropdown dropdown--chapters" id="menu-materi" hidden>
+              <!-- Daftar Kapitel per perjalanan diisi js/app.js dari data/lessons.js -->
+              <div class="chapter-menu" data-chapter-menu></div>
+              <a class="dropdown__link" href="#/materi">Lihat semua perjalanan <span aria-hidden="true">›</span></a>
+            </div>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#/kuis" data-nav="kuis"><span class="site-nav__label">Kuis</span></a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#/kamus" data-nav="kamus"><span class="site-nav__label">Kamus</span></a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#/progres" data-nav="progres"><span class="site-nav__label">Progres Belajar</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Profil aktif (diisi js/profile.js); klik untuk mengganti -->
+      <button class="profile-chip" type="button" aria-haspopup="dialog" data-profile-chip hidden></button>
+
+      <!-- Tepi kertas sobek di bawah navbar -->
+      <div class="torn-edge" aria-hidden="true"></div>
+    </header>
+
+    <main class="page" id="app" tabindex="-1">
+      <noscript>
+        <p class="noscript">DeutschLern membutuhkan JavaScript. Aktifkan JavaScript di browser, lalu muat ulang halaman ini.</p>
+      </noscript>
+    </main>
+  </div>
+
+  <!-- Modal "Siapa yang belajar hari ini?" (isinya dari js/profile.js) -->
+  <dialog class="dialog profile-dialog" id="profile-dialog" aria-labelledby="profile-dialog-title"></dialog>
+
+  <!-- Modal PIN Mode Guru (isinya dari js/teacher.js) -->
+  <dialog class="dialog teacher-dialog" id="teacher-dialog" aria-labelledby="teacher-dialog-title"></dialog>
+
+  <!-- Modal Latih ucapan (isinya dari js/practice.js) -->
+  <dialog class="dialog practice-dialog" id="practice-dialog" aria-labelledby="practice-dialog-title"></dialog>
+
+  <!-- Skrip biasa (bukan module) agar jalan dari file://.
+       Urutan penting: data → router → storage → data.js → components → book → profile → teacher → speech → practice → anim → halaman → app (paling akhir). -->
+  <script src="data/lessons.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/book.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/teacher.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/practice.js"></script>
+  <script src="js/anim.js"></script>
+  <script src="js/pages/beranda.js"></script>
+  <script src="js/pages/materi.js"></script>
+  <script src="js/pages/kapitel.js"></script>
+  <script src="js/pages/plattform.js"></script>
+  <script src="js/pages/kuis.js"></script>
+  <script src="js/pages/kamus.js"></script>
+  <script src="js/pages/progres.js"></script>
+  <script src="js/pages/komponen.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
